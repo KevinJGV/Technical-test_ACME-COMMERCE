@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Jost";
+    src: url(font/Jost/Jost-VariableFont_wght.ttf);
+}
+
+.flex {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.flex_column {
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+}
+
+.padding_10 {
+    padding: 10px;
+}
+
+* {
+    font-family: "Jost";
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    margin-block: 10px;
+    padding: 0;
+}
+
+.container_a {
+    width: 20cqw;
+    height: 100cqh;
+    justify-content: space-between;
+}
+
+.title {
+    gap: 15px;
+    justify-content: center;
+}
+
+.title_img {
+    max-width: 5rem;
+    max-height: 5rem;
+}
+ 
+
+.index ul {
+    list-style: none;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.container_b {
+    width: 79cqw;
+    height: 96cqh;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: black solid 1px;
+    justify-content: space-between;
+}
+
+.cards_container {
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.card {
+    max-width: 250px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    width: 200px;
+    max-height: 300px;
+    align-self: center;
+}
+
+.card button {
+    align-self: flex-end;
+}
+
+.advice {
+    display: none;
+}
+
+.footer_responsive {
+    display: none;
+}
+@media (max-width:389px){
+    body *{
+        display: none;
+    }
+    .advice,.advice *{
+        display:unset;
+        background-color: white;
+    }
+    .advice {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+@media (min-width:390px) and (max-width:950px) {
+    body {
+        flex-flow: column wrap;
+        margin: 0;
+    }
+
+    .container_a {
+        width: 100cqw;
+        height:min-content;
+        justify-content: unset;
+        padding: 0;
+    }
+
+    .index {
+        background-color: rgb(48, 48, 48);
+        height: max-content;
+    }
+
+    .index ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    }
+
+    .index li {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .index a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .container_b {
+        width: 100cqw;
+        border: unset;
+        border-radius: unset;
+        height: 85cqh;
+    }
+    .footer_responsive {
+        display: unset;
+        text-align: center;
+    }
+}
