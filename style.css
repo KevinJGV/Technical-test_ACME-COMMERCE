@@ -90,7 +90,11 @@ footer {
 
 .cart_container {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+}
+
+.cart_product {
+    display: flex;
 }
 
 .cart_container img {
