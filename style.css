@@ -103,7 +103,11 @@ footer {
     border: black solid 1px;
 }
 
-.space_around {
+.space_between {
+    justify-content: space-between;
+}
+
+.space-around {
     justify-content: space-around;
 }
 
@@ -185,6 +189,12 @@ button:active {
     align-self: center;
 }
 
+.empty {
+    text-align: center;
+    color: rgb(48 48 48 / 50%);
+    user-select: none;
+}
+
 .cart_actions {
     display: flex;
     justify-content: space-evenly;
@@ -229,7 +239,19 @@ fieldset * {
 }
 
 @media (min-width:390px) and (max-width:755px) {
-    /* AQUI ES EL CARRITO SIN FLEX COLUMN */
+    .cart_product {
+        flex-flow: column;
+        gap: 0;
+        padding-inline: 50px;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .fit_button {
+        margin: 10px;
+    }
 }
 
 @media (min-width:390px) and (max-width:950px) {
