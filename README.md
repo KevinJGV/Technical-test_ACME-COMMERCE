@@ -1,4 +1,4 @@
-# Work Project | examen_ACME-COMMERCE
+# Technical test | examen_ACME-COMMERCE
 
 Prueba tecnica para las habilidades y conocimientos adquiridos en Python en el periodo de 1 mes
 
