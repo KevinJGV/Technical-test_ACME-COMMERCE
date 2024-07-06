@@ -52,4 +52,4 @@ El proyecto está compuesto por **8 páginas**:
 
 * [Kevin González - KevinJGV](https://github.com/KevinJGV)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/KevinJGV/Technical-test_ACME-COMMERCE/graphs/contributors) quíenes han participado en este proyecto.
